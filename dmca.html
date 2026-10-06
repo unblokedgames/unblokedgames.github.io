@@ -1,217 +1,774 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <link rel="icon" href="/images/favicon.png" sizes="32x32">
-    <meta name="robots" content="index,follow">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DMCA - Unblocked Games</title>
-    <meta name="description" content="DMCA Policy for Unblocked Games">
+    <title>DMCA - UnblokedGames</title>
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery-comments.css">
-    <link rel="stylesheet" type="text/css" href="css/user.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <meta name="description"
+          content="DMCA Copyright Policy for Unblocked Games. Learn how to submit a copyright infringement notice.">
 
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <meta name="robots" content="index,follow">
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/favicon.png" sizes="32x32">
 
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
           rel="stylesheet">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9EZRPQLB5N"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    <style>
 
-        gtag('config', 'G-9EZRPQLB5N');
-    </script>
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(52, 122, 67, 0.18), transparent 35%),
+                radial-gradient(circle at bottom right, rgba(35, 90, 47, 0.16), transparent 35%),
+                #0b100d;
+            color: #e9eee9;
+            line-height: 1.75;
+            min-height: 100vh;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .navbar {
+            width: 100%;
+            min-height: 72px;
+            background: rgba(9, 18, 12, 0.96);
+            border-bottom: 1px solid rgba(111, 170, 112, 0.20);
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+            position: relative;
+            z-index: 10;
+        }
+
+        .nav-container {
+            width: 100%;
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 22px;
+            min-height: 72px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            font-size: 21px;
+            font-weight: 700;
+            color: #ffffff;
+
+            transition: 0.25s ease;
+        }
+
+        .brand:hover {
+            color: #8bd18c;
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: linear-gradient(135deg, #4caf50, #236b2c);
+            color: #ffffff;
+
+            font-size: 18px;
+            font-weight: 700;
+
+            box-shadow: 0 5px 18px rgba(76, 175, 80, 0.25);
+        }
+
+        /* =========================
+           MAIN
+        ========================= */
+
+        .page-wrapper {
+            width: 100%;
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 55px 22px 70px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .page-badge {
+            display: inline-block;
+            padding: 7px 15px;
+            margin-bottom: 15px;
+
+            border: 1px solid rgba(111, 190, 113, 0.30);
+            border-radius: 50px;
+
+            background: rgba(76, 175, 80, 0.08);
+            color: #8bd18c;
+
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .page-title {
+            font-size: clamp(34px, 5vw, 52px);
+            line-height: 1.15;
+            color: #ffffff;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .page-subtitle {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #aab5ac;
+            font-size: 15px;
+        }
+
+        /* =========================
+           CONTENT CARD
+        ========================= */
+
+        .dmca-card {
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(25, 38, 28, 0.97),
+                    rgba(13, 21, 16, 0.98)
+                );
+
+            border: 1px solid rgba(112, 160, 115, 0.18);
+            border-radius: 18px;
+
+            padding: 42px;
+
+            box-shadow:
+                0 20px 70px rgba(0, 0, 0, 0.35),
+                inset 0 1px 0 rgba(255, 255, 255, 0.025);
+        }
+
+        .updated {
+            display: inline-flex;
+            align-items: center;
+
+            padding: 8px 14px;
+            margin-bottom: 30px;
+
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.045);
+
+            color: #aeb9b0;
+            font-size: 13px;
+        }
+
+        .updated strong {
+            color: #ffffff;
+            margin-left: 5px;
+        }
+
+        .content-section {
+            margin-bottom: 38px;
+        }
+
+        .content-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-heading {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+
+            color: #ffffff;
+            font-size: 25px;
+            line-height: 1.3;
+
+            margin-bottom: 18px;
+        }
+
+        .heading-line {
+            width: 4px;
+            min-width: 4px;
+            height: 27px;
+
+            border-radius: 10px;
+            background: linear-gradient(
+                to bottom,
+                #63c466,
+                #287d32
+            );
+        }
+
+        .content-section p {
+            color: #b9c3ba;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .content-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* =========================
+           LIST
+        ========================= */
+
+        .requirements {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .requirements > li {
+            position: relative;
+            padding: 15px 18px 15px 48px;
+            margin-bottom: 11px;
+
+            background: rgba(255, 255, 255, 0.025);
+            border: 1px solid rgba(255, 255, 255, 0.045);
+            border-radius: 10px;
+
+            color: #c4cdc5;
+            font-size: 14px;
+
+            transition: 0.2s ease;
+        }
+
+        .requirements > li:hover {
+            background: rgba(76, 175, 80, 0.055);
+            border-color: rgba(99, 196, 102, 0.15);
+        }
+
+        .requirements > li::before {
+            content: "✓";
+
+            position: absolute;
+            left: 17px;
+            top: 15px;
+
+            width: 22px;
+            height: 22px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: rgba(76, 175, 80, 0.14);
+            color: #73d276;
+
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        /* =========================
+           QUOTED STATEMENTS
+        ========================= */
+
+        .statements {
+            margin-top: 15px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .statements li {
+            position: relative;
+
+            margin: 12px 0;
+            padding: 16px 18px 16px 20px;
+
+            background: rgba(0, 0, 0, 0.18);
+            border-left: 3px solid #4caf50;
+            border-radius: 0 8px 8px 0;
+
+            color: #c9d1ca;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        /* =========================
+           EMAIL BOX
+        ========================= */
+
+        .contact-box {
+            margin-top: 25px;
+            padding: 25px;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(76, 175, 80, 0.10),
+                    rgba(76, 175, 80, 0.025)
+                );
+
+            border: 1px solid rgba(76, 175, 80, 0.20);
+            border-radius: 13px;
+        }
+
+        .contact-label {
+            color: #9da99f;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .email {
+            display: inline-block;
+
+            color: #8cdb8f;
+            font-size: 18px;
+            font-weight: 600;
+
+            word-break: break-word;
+
+            transition: 0.2s ease;
+        }
+
+        .email:hover {
+            color: #b3eeb5;
+        }
+
+        /* =========================
+           INFO NOTICE
+        ========================= */
+
+        .info-notice {
+            margin-top: 32px;
+            padding: 17px 20px;
+
+            border-radius: 10px;
+
+            background: rgba(255, 193, 7, 0.055);
+            border: 1px solid rgba(255, 193, 7, 0.13);
+
+            color: #bdb7a3;
+            font-size: 13px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .footer {
+            border-top: 1px solid rgba(111, 170, 112, 0.14);
+            background: rgba(6, 11, 8, 0.85);
+
+            padding: 25px 20px;
+        }
+
+        .footer-container {
+            max-width: 1180px;
+            margin: 0 auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .copyright {
+            color: #7f8981;
+            font-size: 13px;
+        }
+
+        .footer-links {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .footer-links a {
+            color: #8d998f;
+            font-size: 13px;
+            transition: 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: #78d17b;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 768px) {
+
+            .navbar,
+            .nav-container {
+                min-height: 64px;
+            }
+
+            .nav-container {
+                padding: 0 16px;
+            }
+
+            .brand {
+                font-size: 18px;
+            }
+
+            .brand-icon {
+                width: 34px;
+                height: 34px;
+                font-size: 15px;
+            }
+
+            .page-wrapper {
+                padding: 38px 14px 50px;
+            }
+
+            .page-header {
+                margin-bottom: 25px;
+            }
+
+            .page-title {
+                font-size: 36px;
+            }
+
+            .page-subtitle {
+                font-size: 13px;
+            }
+
+            .dmca-card {
+                padding: 25px 19px;
+                border-radius: 14px;
+            }
+
+            .section-heading {
+                font-size: 21px;
+            }
+
+            .content-section p {
+                font-size: 14px;
+            }
+
+            .requirements > li {
+                padding: 14px 14px 14px 43px;
+                font-size: 13px;
+            }
+
+            .email {
+                font-size: 16px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 420px) {
+
+            .page-title {
+                font-size: 31px;
+            }
+
+            .dmca-card {
+                padding: 21px 15px;
+            }
+
+            .updated {
+                font-size: 11px;
+            }
+
+            .section-heading {
+                font-size: 19px;
+            }
+
+            .requirements > li {
+                font-size: 12.5px;
+            }
+
+            .statements li {
+                font-size: 12.5px;
+            }
+        }
+
+    </style>
 </head>
 
-<body id="page-top"
-      style="background: url('images/background1.png'); background-size: cover;">
+<body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark top-nav" id="mainNav">
-        <div class="container">
+    <!-- =========================
+         HEADER
+    ========================== -->
 
-            <button class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#nav-menu"
-                    aria-controls="nav-menu"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header class="navbar">
+        <div class="nav-container">
 
-            <a class="navbar-brand js-scroll-trigger" href="/">
-                <strong>Unblocked Games</strong>
+            <a href="/" class="brand">
+                <span class="brand-icon">UG</span>
+                <span>Unblocked Games</span>
             </a>
 
-            <div class="navbar-collapse collapse" id="nav-menu">
+        </div>
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="page-wrapper">
+
+        <div class="page-header">
+
+            <div class="page-badge">
+                Copyright Policy
             </div>
 
-            <div class="d-none d-lg-block">
-                <ul class="navbar-nav">
-                </ul>
-            </div>
+            <h1 class="page-title">
+                DMCA
+            </h1>
+
+            <p class="page-subtitle">
+                Copyright infringement notices and intellectual property policy
+                for Unblocked Games.
+            </p>
 
         </div>
-    </nav>
 
-    <div class="container">
 
-        <div class="content-wrapper">
+        <article class="dmca-card">
 
-            <div style="padding-bottom: 20px" align="center">
+            <div class="updated">
+                Last Updated:
+                <strong>August 18, 2025</strong>
             </div>
 
-            <div class="row">
 
-                <div class="col-md-12">
+            <!-- INTRODUCTION -->
 
-                    <div class="w-full h-full flex flex-col justify-center items-center py-20 gap-y-10 px-5">
+            <section class="content-section">
 
-                        <h1 class="section-title">DMCA</h1>
+                <h2 class="section-heading">
+                    <span class="heading-line"></span>
+                    Copyright Policy
+                </h2>
 
-                        <div class="flex flex-col w-full max-w-7xl">
+                <p>
+                    Unblocked Games (the "Site") respects the intellectual
+                    property rights of others and expects its users to do
+                    the same.
+                </p>
 
-                            <h1 class="text-base md:text-lg 2xl:text-xl font-semibold tracking-tight italic">
-                                Last Updated: August 18, 2025
-                            </h1>
+                <p>
+                    In accordance with the Digital Millennium Copyright Act
+                    of 1998, the text of which may be found on the U.S.
+                    Copyright Office website at
+                    http://www.copyright.gov/legislation/dmca.pdf,
+                    and specifically in accordance with 17 USC § 512(c)(3),
+                    Unblocked Games will respond expeditiously to claims of
+                    copyright infringement committed using the Unblocked
+                    Games service and/or any Unblocked Games website.
+                </p>
 
-                            <p class="pb-4">
-                                Unblocked Games
-                                (the "Site") respects the intellectual property rights of others
-                                and expects its users to do the same. In accordance with the Digital
-                                Millennium Copyright Act of 1998, the text of which may be found on
-                                the U.S. Copyright Office website at
-                                http://www.copyright.gov/legislation/dmca.pdf, and specifically in
-                                accordance with 17 USC § 512(c)(3), Unblocked Games will respond
-                                expeditiously to claims of copyright infringement committed using
-                                the Unblocked Games service and/or any Unblocked Games website
-                                (the "Site") if such claims are reported to Unblocked Games's
-                                Designated Email identified below.
-                            </p>
+                <p>
+                    If such claims are properly reported to Unblocked Games's
+                    Designated Email identified below, we will review the
+                    complaint and take appropriate action where necessary.
+                </p>
 
-                            <h1 class="text-lg md:text-xl 2xl:text-2xl font-semibold tracking-tight">
-                                DMCA Notice of Alleged Infringement ("Notice")
-                            </h1>
+            </section>
 
-                            <p class="pb-4">
-                                If you are a copyright owner, authorized to act on behalf of one,
-                                or authorized to act under any exclusive right under copyright,
-                                please report alleged copyright infringements taking place on or
-                                through the Site by completing a DMCA Notice of Alleged Infringement
-                                and delivering it to Unblocked Games's Designated Email.
 
-                                Upon receipt of a Notice as described below, Unblocked Games will
-                                take whatever action, in its sole discretion, it deems appropriate,
-                                including removal of the challenged content from the Site.
+            <!-- DMCA NOTICE -->
 
-                                Please note that if you fail to comply with all of the requirements
-                                of this section and of 17 USC § 512(c)(3), your DMCA notice may not
-                                be valid.
-                            </p>
+            <section class="content-section">
 
-                            <ul class="list-disc list-inside">
+                <h2 class="section-heading">
+                    <span class="heading-line"></span>
+                    DMCA Notice of Alleged Infringement
+                </h2>
 
-                                <li>
-                                    Identify the copyrighted work that you claim has been infringed,
-                                    or - if multiple copyrighted works are covered by your Notice -
-                                    you may provide a representative list of the copyrighted works
-                                    that you claim have been infringed.
-                                </li>
+                <p>
+                    If you are a copyright owner, authorized to act on behalf
+                    of one, or authorized to act under any exclusive right
+                    under copyright, please report alleged copyright
+                    infringements taking place on or through the Site by
+                    submitting a DMCA Notice of Alleged Infringement.
+                </p>
 
-                                <li>
-                                    Identify the material or link you claim is infringing (or the
-                                    subject of infringing activity) and to which access is to be
-                                    disabled, including at a minimum, if applicable, the URL of the
-                                    link shown on the Site or the exact location where such material
-                                    may be found.
-                                </li>
+                <p>
+                    Upon receipt of a valid Notice as described below,
+                    Unblocked Games will take whatever action, in its sole
+                    discretion, it deems appropriate, including removal of
+                    the challenged content from the Site.
+                </p>
 
-                                <li>
-                                    Provide your company affiliation (if applicable), mailing address,
-                                    telephone number, and, if available, email address.
-                                </li>
+                <p>
+                    Please note that if you fail to comply with all of the
+                    requirements of this section and of 17 USC § 512(c)(3),
+                    your DMCA notice may not be valid.
+                </p>
 
-                                <li>
-                                    Include both of the following statements in the body of the Notice:
+            </section>
 
-                                    <ul class="list-disc list-inside pl-6">
 
-                                        <li>
-                                            "I hereby state that I have a good faith belief that the
-                                            disputed use of the copyrighted material is not authorized
-                                            by the copyright owner, its agent, or the law (e.g., as a
-                                            fair use)."
-                                        </li>
+            <!-- REQUIREMENTS -->
 
-                                        <li>
-                                            "I hereby state that the information in this Notice is
-                                            accurate and, under penalty of perjury, that I am the owner,
-                                            or authorized to act on behalf of, the owner, of the copyright
-                                            or of an exclusive right under the copyright that is allegedly
-                                            infringed."
-                                        </li>
+            <section class="content-section">
 
-                                    </ul>
-                                </li>
+                <h2 class="section-heading">
+                    <span class="heading-line"></span>
+                    DMCA Notice Requirements
+                </h2>
 
-                                <li>
-                                    Provide your full legal name and your electronic or physical signature.
-                                </li>
+                <ul class="requirements">
 
-                                <li>
-                                    Deliver this Notice, with all items completed, to Unblocked Games's
-                                    Designated Email:
-                                    <br>
-                                    <strong>info.jamesborders@gmail.com</strong>
-                                </li>
+                    <li>
+                        Identify the copyrighted work that you claim has been
+                        infringed. If multiple copyrighted works are covered
+                        by your Notice, you may provide a representative list
+                        of the copyrighted works that you claim have been
+                        infringed.
+                    </li>
 
-                            </ul>
+                    <li>
+                        Identify the material or link you claim is infringing
+                        and to which access is to be disabled, including, if
+                        applicable, the URL of the link shown on the Site or
+                        the exact location where such material may be found.
+                    </li>
 
-                        </div>
+                    <li>
+                        Provide your company affiliation, if applicable,
+                        mailing address, telephone number, and, if available,
+                        email address.
+                    </li>
 
+                    <li>
+                        Include both of the following statements in the body
+                        of the Notice:
+
+                        <ul class="statements">
+
+                            <li>
+                                "I hereby state that I have a good faith belief
+                                that the disputed use of the copyrighted
+                                material is not authorized by the copyright
+                                owner, its agent, or the law (e.g., as a
+                                fair use)."
+                            </li>
+
+                            <li>
+                                "I hereby state that the information in this
+                                Notice is accurate and, under penalty of
+                                perjury, that I am the owner, or authorized
+                                to act on behalf of, the owner, of the
+                                copyright or of an exclusive right under the
+                                copyright that is allegedly infringed."
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        Provide your full legal name and your electronic or
+                        physical signature.
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- CONTACT -->
+
+            <section class="content-section">
+
+                <h2 class="section-heading">
+                    <span class="heading-line"></span>
+                    Submit a DMCA Notice
+                </h2>
+
+                <p>
+                    Deliver your completed DMCA Notice, including all required
+                    information, to our designated email address:
+                </p>
+
+                <div class="contact-box">
+
+                    <div class="contact-label">
+                        Designated DMCA Email
                     </div>
+
+                    <a class="email"
+                       href="mailto:info.jamesborders@gmail.com">
+                        info.jamesborders@gmail.com
+                    </a>
 
                 </div>
 
+                <div class="info-notice">
+                    Please make sure that your notice contains all required
+                    information before submitting it. Incomplete notices
+                    may not be considered valid.
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="copyright">
+                © 2025 Unblocked Games. All rights reserved.
+            </div>
+
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/dmca.html">DMCA</a>
             </div>
 
         </div>
 
-    </div>
-
-    <!-- Footer -->
-    <div class="footer-copyright py-4">
-        <div class="container">
-            Unblocked Games
-            <span class="dsb-panel">
-                <a href="/dmca.html">DMCA</a>
-            </span>
-        </div>
-    </div>
-
-    <script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
-    <script type="text/javascript" src="js/lazysizes.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    </footer>
 
 </body>
 </html>
