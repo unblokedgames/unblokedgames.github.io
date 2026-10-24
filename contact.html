@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Unbloked Games for website questions, feedback, technical issues, or content concerns.">
+  <title>Contact Us | Unbloked Games</title>
+
+  <style>
+    :root {
+      --bg: #171717;
+      --panel: #222222;
+      --text: #f5f5f5;
+      --muted: #c5c5c5;
+      --accent: #ff3131;
+      --line: #3b3b3b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.7 Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: #ff7777;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .topbar {
+      background: #202020;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      max-width: 1120px;
+      margin: auto;
+      padding: 16px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: 800;
+      color: white;
+    }
+
+    .brand span { color: var(--accent); }
+
+    .navlinks {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .navlinks a {
+      color: #eeeeee;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 52px 22px 34px;
+      background: radial-gradient(ellipse at top right, #3a2020, transparent 55%);
+    }
+
+    .hero-inner {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      color: #ff7777;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 5vw, 46px);
+      line-height: 1.2;
+      margin: 10px 0 14px;
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0;
+    }
+
+    .layout {
+      max-width: 1050px;
+      margin: auto;
+      padding: 24px 22px 58px;
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 26px;
+      box-shadow: 0 12px 35px #0002;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    .card p { color: #d0d0d0; }
+
+    .contact-item {
+      padding: 15px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .contact-item:last-child { border-bottom: 0; }
+
+    .contact-item strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .contact-item span {
+      color: #bbbbbb;
+      font-size: 14px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #3a2424;
+      color: #ff9a9a;
+      border: 1px solid #633333;
+      border-radius: 99px;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .field { margin: 16px 0; }
+
+    .field label {
+      display: block;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 7px;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 12px 13px;
+      background: #181818;
+      color: #f5f5f5;
+      border: 1px solid #484848;
+      border-radius: 7px;
+      font: inherit;
+      outline: none;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: #ff5555;
+      box-shadow: 0 0 0 3px #ff31331c;
+    }
+
+    .field textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .btn {
+      display: inline-block;
+      border: 0;
+      border-radius: 7px;
+      background: var(--accent);
+      color: white;
+      padding: 12px 18px;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .btn:hover { background: #e12626; }
+
+    .small {
+      font-size: 12px;
+      color: #aaaaaa !important;
+      margin-top: 12px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 25px 22px;
+      color: #aaaaaa;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .footlinks {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 760px) {
+      .layout { grid-template-columns: 1fr; }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .navlinks { gap: 14px; }
+      .hero { padding-top: 38px; }
+      .card { padding: 21px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="index.html">
+      UNBLOKED<span>GAMES</span>
+    </a>
+
+    <div class="navlinks">
+      <a href="index.html">Games</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="dmca.html">DMCA</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">We're here to help</div>
+    <h1>Contact Us</h1>
+    <p class="intro">
+      Have a question, found a technical issue, or want to share
+      feedback? Get in touch with the Unbloked Games team.
+    </p>
+  </div>
+</section>
+
+<main class="layout">
+
+  <section class="card">
+    <span class="badge">Get in touch</span>
+    <h2>How can we help?</h2>
+    <p>
+      We welcome feedback that helps us improve the website
+      and make browsing games easier.
+    </p>
+
+    <div class="contact-item">
+      <strong>General Questions</strong>
+      <span>Questions about the website or its features.</span>
+    </div>
+
+    <div class="contact-item">
+      <strong>Technical Issues</strong>
+      <span>Report a page or game that does not work correctly.</span>
+    </div>
+
+    <div class="contact-item">
+      <strong>Content Concerns</strong>
+      <span>Include the relevant page URL and explain your concern.</span>
+    </div>
+
+    <div class="contact-item">
+      <strong>Email</strong>
+      <span>
+        <a href="mailto:info.jamesborders@gmail.com">
+          info.jamesborders@gmail.com
+        </a>
+      </span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footlinks">
+    <a href="index.html">Games</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <div>© 2026 Unbloked Games. All rights reserved.</div>
+</footer>
+</body>
+</html>
